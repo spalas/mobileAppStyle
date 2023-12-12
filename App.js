@@ -1,12 +1,27 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { SafeAreaView, StyleSheet, Text, View } from 'react-native';
+import Elovator from './compoment/Elovator';
+import FancyCard from './compoment/FancyCard';
+import { ScrollView } from 'react-native';
+import ActionCard from './compoment/ActionCard';
+import ContactList from './compoment/ContactList';
+import Flatcard from './compoment/Flatcard';
 
 export default function App() {
+  
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+  
+    <SafeAreaView>
+      <ScrollView>
+        <Flatcard/>
+        <Elovator />
+        <FancyCard/>
+        <ActionCard />
+        <ContactList />
+        <StatusBar style="auto" />
+      </ScrollView>
+    </SafeAreaView>
+
   );
 }
 
